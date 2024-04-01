@@ -4,7 +4,7 @@ const relPath = require('../util/rouetUtil');
 
 const router = express.Router();
 
-router.use('/', (req, resp, next) => {
+router.get('/', (req, resp, next) => {
   console.log('home page route');
   resp.sendFile(path.join(relPath, 'views', 'home.html'));
 });

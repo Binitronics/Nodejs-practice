@@ -41,7 +41,8 @@ html,body{
 .content{
   padding: 1rem;
   display: flex;
-  height: 50%;
+  margin:0 ;
+  height: 10%;
   align-items: center;
   justify-content: center;
 }
