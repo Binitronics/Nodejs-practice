@@ -1,0 +1,33 @@
+.user-form {
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0.5rem;
+}
+input {
+  margin: 4px 0;
+  padding: 4px;
+  border: 1px solid rgb(78, 92, 120);
+  border-radius: 8px;
+}
+label {
+  color: rgb(78, 92, 120);
+}
+button {
+  min-width: 100px;
+  padding: 8px;
+  border: none;
+  border-radius: 8px;
+  background-color: rgb(78, 92, 120);
+  color: white;
+}
+button:active{
+  background-color: rgb(16, 56, 137);
+}

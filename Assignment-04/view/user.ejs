@@ -1,0 +1,25 @@
+<%-include('layout/header.ejs')%>
+  <link rel="stylesheet" href="/styles/user-form.css">
+</head>
+
+<body>
+  <%-include('layout/navigation.ejs')%>
+  <main class="main">
+    <form class="user-form" action="/admin/user-list" method="POST">
+      <div class="input-container">
+        <label for="name">Name</label>
+        <input type="text" name="name" class="user-input"></input>
+      </div>
+      <div class="input-container">
+        <label for="age">Age</label>
+        <input type="text" name="age" class="user-input"></input>
+      </div>
+      <div>
+        <button type="submit" class="user-button">Add User</button>
+      </div>
+
+    </form>
+  </main>
+</body>
+
+</html>

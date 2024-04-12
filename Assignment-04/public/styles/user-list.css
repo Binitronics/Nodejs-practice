@@ -1,0 +1,25 @@
+.user-container {
+}
+
+.user-list {
+  list-style: none;
+}
+.custom-list-style {
+  width: 20px;
+  height: 20px;
+  background-color: antiquewhite;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+.user-item {
+  margin: 16px 0;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  border: 1px solid antiquewhite;
+  border-radius: 8px;
+  padding: 10px;
+}
+.user-item p {
+  margin:4px;
+}

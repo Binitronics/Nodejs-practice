@@ -1,0 +1,34 @@
+<%-include('layout/header.ejs')%>
+  <link rel="stylesheet" href="/styles/user-list.css">
+</head>
+
+<body>
+<%-include('layout/navigation.ejs')%>
+  <main class="contain">
+    <%if(userList.length>0){%>
+    <div class="user-container">
+      <h2>List of users</h2>
+      <ul class="user-list">
+        <% for(let user of userList){%>
+          <li class="user-item">
+            <div class="custom-list-style"></div>
+            <div>
+              <p>Name: <span>
+                  <%=user.name%>
+                </span></p>
+              <p>Age: <span>
+                  <%=user.age%>
+                </span></p>
+            </div>
+
+          </li>
+          <%}%>
+      </ul>
+    </div>
+    <%}else{%>
+      <h3>No users found</h3>
+    <%}%>
+  </main>
+</body>
+
+</html>
